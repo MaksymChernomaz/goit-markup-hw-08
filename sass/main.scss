@@ -1,0 +1,19 @@
+// base
+@import "./base/commond";
+@import "./base/reset";
+
+// components
+@import "./components/modal";
+
+// layout
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/specifics";
+@import "./layout/about";
+@import "./layout/team";
+@import "./layout/customers";
+@import "./layout/footer";
+@import "./layout/portfolio";
+
+// utils
+@import "./utils/variables";

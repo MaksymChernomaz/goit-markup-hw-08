@@ -1,0 +1,126 @@
+.header {
+    border-bottom: 1px solid var(--header-border-color);
+
+    & .container {
+            display: flex;
+            align-items: center;
+            padding-top: 24px;
+            padding-bottom: 25px;
+        }
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    margin-right: 305px;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.link-list {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.link-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.logo-nav {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+    margin-right: 93px;
+}
+
+.header-logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--head-logo-color);
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    transition: color 250ms var(--time-function);
+
+    &-icon {
+            display: inline-block;
+            fill: currentColor;
+            margin-right: 10px;
+            justify-content: center;
+        }
+    
+    &-icon:hover,
+    &-icon:focus {
+      fill: var(--accent-color);
+        }
+}
+
+.header-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms var(--time-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+     &.current {
+        color: var(--accent-color);
+        position: relative;
+    }
+}
+
+.header-mail {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.header-tel {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    display: block;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
