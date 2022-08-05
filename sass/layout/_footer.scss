@@ -2,6 +2,10 @@
     padding: 60px 0;
     text-align: center;
     background-color: var(--main-background-color);
+
+    @media screen and(min-width:1200px) {
+        text-align: left;
+    }
 }
 
 .footer-container {
@@ -14,7 +18,7 @@
     }
 
     @media screen and(min-width:1200px) {
-        text-align: left;
+        align-items: baseline;;
     }
 }
 
@@ -24,20 +28,16 @@
 
 .logo-nav {
     .footer & {
-        padding-bottom: 0;
         margin-bottom: 20px;
+        padding-bottom: 0;
         display: block;
     }
 }
 
-.footer-nav {
-    margin-bottom: 60px;
-}
 
 .footer-link {
     font-style: normal;
-    margin-bottom: 60px;
-    
+
     @media screen and(min-width:1200px) {
         margin: 0;
     }
